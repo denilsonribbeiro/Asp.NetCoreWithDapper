@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\font-awesome\**" />
+    <Content Remove="wwwroot\font-awesome\**" />
+    <EmbeddedResource Remove="wwwroot\font-awesome\**" />
+    <None Remove="wwwroot\font-awesome\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ORM\ORM.csproj" />
+  </ItemGroup>
+
+</Project>

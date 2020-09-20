@@ -1,0 +1,15 @@
+﻿@model Entities.ToDo
+
+@{
+    ViewData["Title"] = "Remover";
+}
+
+<div class="card">
+    <div class="card-header">Tarefas a fazer</div>
+    <div class="card-body">
+        Você deseja remover a tarefa @Model.Tarefa? <br /><br />
+        @Html.ActionLink("Sim", "ConfirmaRemover", "Home", new { id = Model.Id }, new { @class = "btn btn-danger btn-sm" })
+        @Html.ActionLink("Voltar", "Index", "Home", null, new { @class = "btn btn-light btn-sm" })
+
+    </div>
+</div>
